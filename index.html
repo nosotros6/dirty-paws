@@ -295,10 +295,22 @@
   <!--  NOTE: Please add the following <FORM> element to your page.             -->
   <!--  ----------------------------------------------------------------------  -->
   
-  <form id="contact-form" action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000001Qy0m" method="POST">
+ <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000001Qy0m" method="POST">
   
   <input type=hidden name="oid" value="00DHn000001Qy0m">
-  <input type=hidden name="retURL" value="https://nosotros6.github.io/dirty-paws/">
+  <input type=hidden name="retURL" value="http://google.com">
   
   <!--  ----------------------------------------------------------------------  -->
   <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -306,34 +318,33 @@
   <!--  <input type="hidden" name="debug" value=1>                              -->
   <!--  <input type="hidden" name="debugEmail" value="peltotino82@gmail.com">   -->
   <!--  ----------------------------------------------------------------------  -->
-  <div class="form-group">
-  <label for="first_name" class="pt-3">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
   
-  <label for="last_name" class="pt-3">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
   
-  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" placeholder="correo@usuario.com"/><br>
-  <!-- <input type="email" id="correo" name="email" maxlength="80" size="20" placeholder="correo@usuario.com"
-            required /> -->
-  <label for="phone" class="pt-3">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+  
+  <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
   
   Tipo de Convenio:<select  id="00NHn00000HSpgE" name="00NHn00000HSpgE" title="Tipo de Convenio"><option value="">--None--</option><option value="Convenio Trabajadores UBB">Convenio Trabajadores UBB</option>
   <option value="Convenio Asoc. Zoologicos Latam">Convenio Asoc. Zoologicos Latam</option>
   </select><br>
   
-  <label for="company" class="pt-3">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+  <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
   
   Interes:<select  id="00NHn00000HSpzT" name="00NHn00000HSpzT" title="Interes"><option value="">--None--</option><option value="Servicios e insumos para veterinarios">Servicios e insumos para veterinarios</option>
   <option value="Productos para tu mascota">Productos para tu mascota</option>
   </select><br>
   
-  <label for="lead_source" class="pt-3">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Sitio_Web">Sitio Web</option>
+  <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Sitio_Web">Sitio Web</option>
   <option value="Ferias o Eventos">Ferias o Eventos</option>
   <option value="Me lo recomendo un conocido/a">Me lo recomendo un conocido/a</option>
   <option value="Otro">Otro</option>
   </select><br>
   
-  <input type="submit" name="submit" class="btn-primary px-4 py-2 m-3 rounded-2">
-</div>
+  <input type="submit" name="submit">
+  
   </form>
 
   
