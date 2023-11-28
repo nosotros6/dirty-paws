@@ -224,7 +224,7 @@
       <img class="img-contact-2" src="./assets/img/imageCatWhite.png" alt="Gatito acostado"> -->
       <h4 id="contactar" class="text-center py-4 mt-5">Activa Tus Beneficios AQUÍ:</h4>
       <!--  ----------------------------------------------------------------------  -->
-      <form id="contact-form"
+      <!-- <form id="contact-form"
         action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000001Qy0m"
         method="POST">
         <div class="form-group">
@@ -279,10 +279,63 @@
             <option value="Me lo recomendo un conocido/a">Me lo recomendo un conocido/a</option>
             <option value="Otro">Otro</option>
           </select><br>
-          <!-- <input type="submit" name="submit"> -->
           <button type="submit" name="submit">Enviar</button>
         </div>
-      </form>
+      </form> -->
+
+      <!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: Please add the following <FORM> element to your page.             -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DHn000001Qy0m" method="POST">
+  
+  <input type=hidden name="oid" value="00DHn000001Qy0m">
+  <input type=hidden name="retURL" value="http://google.com">
+  
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail" value="peltotino82@gmail.com">   -->
+  <!--  ----------------------------------------------------------------------  -->
+  
+  <label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+  
+  <label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+  
+  <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+  
+  <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+  
+  Tipo de Convenio:<select  id="00NHn00000HSpgE" name="00NHn00000HSpgE" title="Tipo de Convenio"><option value="">--None--</option><option value="Convenio Trabajadores UBB">Convenio Trabajadores UBB</option>
+  <option value="Convenio Asoc. Zoologicos Latam">Convenio Asoc. Zoologicos Latam</option>
+  </select><br>
+  
+  <label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+  
+  Interes:<select  id="00NHn00000HSpzT" name="00NHn00000HSpzT" title="Interes"><option value="">--None--</option><option value="Servicios e insumos para veterinarios">Servicios e insumos para veterinarios</option>
+  <option value="Productos para tu mascota">Productos para tu mascota</option>
+  </select><br>
+  
+  <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Sitio_Web">Sitio Web</option>
+  <option value="Ferias o Eventos">Ferias o Eventos</option>
+  <option value="Me lo recomendo un conocido/a">Me lo recomendo un conocido/a</option>
+  <option value="Otro">Otro</option>
+  </select><br>
+  
+  <input type="submit" name="submit">
+  
+  </form>
+
+  
     </section>
     <section class="preguntas-frecuentes">
       <h3 class="titulo-preguntas">PREGUNTAS FRECUENTES</h3>
